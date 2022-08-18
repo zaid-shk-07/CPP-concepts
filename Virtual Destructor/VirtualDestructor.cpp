@@ -1,3 +1,16 @@
+/* Early binding:-reference type is considered for the binding rather then its content
+late binding:-Content is considered for the binding
+By default in c++ early binding takes place.
+
+To achieve late binding Virtual keyword is used.
+
+Constructor and destructor Invocation in case of Inheritance
+when object is created, the constructor of the class whose object is created gets called.But before its body is executed it calls its immediate parent constructor.
+same happens for this constructor.process is repeated till it reaches the top most parent.After that finally top most parent constructor body is executed.
+after that its child constructor body is executed....finally the body of the constructor of class whose object was created will be executed
+The opposite happens in case of destructor.
+
+Below program demonstrated need of destructor.
 
 #include <iostream>
 
